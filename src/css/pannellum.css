@@ -364,11 +364,14 @@ div.pnlm-tooltip span {
     padding: 5px 10px;
     margin-left: -220px;
     cursor: default;
+    transition: all 250ms ease-in-out;
 }
-div.pnlm-tooltip:hover span{
+div.pnlm-tooltip:hover span,
+div.pnlm-tooltip:focus span {
     visibility: visible;
 }
-div.pnlm-tooltip:hover span:after {
+div.pnlm-tooltip:hover span:after,
+div.pnlm-tooltip:focus span:after {
     content: '';
     position: absolute;
     width: 0;
